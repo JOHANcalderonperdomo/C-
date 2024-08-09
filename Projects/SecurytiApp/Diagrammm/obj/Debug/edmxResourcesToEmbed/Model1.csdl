@@ -32,6 +32,99 @@
       <End Role="vista" EntitySet="vistaSet" />
       <End Role="modulo" EntitySet="moduloSet" />
     </AssociationSet>
+    <EntitySet Name="FarmSet" EntityType="Model1.Farm" />
+    <AssociationSet Name="Farmusuario" Association="Model1.Farmusuario">
+      <End Role="Farm" EntitySet="FarmSet" />
+      <End Role="usuario" EntitySet="usuarioSet" />
+    </AssociationSet>
+    <EntitySet Name="InventorySet" EntityType="Model1.Inventory" />
+    <EntitySet Name="vacunationSet" EntityType="Model1.vacunation" />
+    <EntitySet Name="AnimalSet" EntityType="Model1.Animal" />
+    <EntitySet Name="AlertSet" EntityType="Model1.Alert" />
+    <AssociationSet Name="AlertAnimal" Association="Model1.AlertAnimal">
+      <End Role="Alert" EntitySet="AlertSet" />
+      <End Role="Animal" EntitySet="AnimalSet" />
+    </AssociationSet>
+    <EntitySet Name="ProductionSet" EntityType="Model1.Production" />
+    <AssociationSet Name="ProductionAnimal" Association="Model1.ProductionAnimal">
+      <End Role="Production" EntitySet="ProductionSet" />
+      <End Role="Animal" EntitySet="AnimalSet" />
+    </AssociationSet>
+    <EntitySet Name="SaleSet" EntityType="Model1.Sale" />
+    <AssociationSet Name="SaleProduction" Association="Model1.SaleProduction">
+      <End Role="Sale" EntitySet="SaleSet" />
+      <End Role="Production" EntitySet="ProductionSet" />
+    </AssociationSet>
+    <EntitySet Name="InseminationSet" EntityType="Model1.Insemination" />
+    <AssociationSet Name="InseminationAnimal" Association="Model1.InseminationAnimal">
+      <End Role="Insemination" EntitySet="InseminationSet" />
+      <End Role="Animal" EntitySet="AnimalSet" />
+    </AssociationSet>
+    <AssociationSet Name="InseminationAnimal1" Association="Model1.InseminationAnimal1">
+      <End Role="Insemination" EntitySet="InseminationSet" />
+      <End Role="Animal" EntitySet="AnimalSet" />
+    </AssociationSet>
+    <AssociationSet Name="InseminationAnimal2" Association="Model1.InseminationAnimal2">
+      <End Role="Insemination" EntitySet="InseminationSet" />
+      <End Role="Animal" EntitySet="AnimalSet" />
+    </AssociationSet>
+    <EntitySet Name="health_historySet" EntityType="Model1.health_history" />
+    <AssociationSet Name="health_historyAnimal" Association="Model1.health_historyAnimal">
+      <End Role="health_history" EntitySet="health_historySet" />
+      <End Role="Animal" EntitySet="AnimalSet" />
+    </AssociationSet>
+    <EntitySet Name="TreatmentSet" EntityType="Model1.Treatment" />
+    <EntitySet Name="LotSet" EntityType="Model1.Lot" />
+    <EntitySet Name="DepartmentSet" EntityType="Model1.Department" />
+    <EntitySet Name="ContinentSet" EntityType="Model1.Continent" />
+    <EntitySet Name="CountrySet" EntityType="Model1.Country" />
+    <EntitySet Name="CitySet" EntityType="Model1.City" />
+    <AssociationSet Name="personaCity" Association="Model1.personaCity">
+      <End Role="persona" EntitySet="personaSet" />
+      <End Role="City" EntitySet="CitySet" />
+    </AssociationSet>
+    <AssociationSet Name="LotFarm" Association="Model1.LotFarm">
+      <End Role="Lot" EntitySet="LotSet" />
+      <End Role="Farm" EntitySet="FarmSet" />
+    </AssociationSet>
+    <EntitySet Name="SuppliesSet" EntityType="Model1.Supplies" />
+    <AssociationSet Name="InventorySupplies" Association="Model1.InventorySupplies">
+      <End Role="Inventory" EntitySet="InventorySet" />
+      <End Role="Supplies" EntitySet="SuppliesSet" />
+    </AssociationSet>
+    <EntitySet Name="inventory_historySet" EntityType="Model1.inventory_history" />
+    <AssociationSet Name="inventory_historyInventory" Association="Model1.inventory_historyInventory">
+      <End Role="inventory_history" EntitySet="inventory_historySet" />
+      <End Role="Inventory" EntitySet="InventorySet" />
+    </AssociationSet>
+    <AssociationSet Name="vacunationpersona" Association="Model1.vacunationpersona">
+      <End Role="vacunation" EntitySet="vacunationSet" />
+      <End Role="persona" EntitySet="personaSet" />
+    </AssociationSet>
+    <AssociationSet Name="vacunationAnimal" Association="Model1.vacunationAnimal">
+      <End Role="vacunation" EntitySet="vacunationSet" />
+      <End Role="Animal" EntitySet="AnimalSet" />
+    </AssociationSet>
+    <AssociationSet Name="Treatmenthealth_history" Association="Model1.Treatmenthealth_history">
+      <End Role="Treatment" EntitySet="TreatmentSet" />
+      <End Role="health_history" EntitySet="health_historySet" />
+    </AssociationSet>
+    <AssociationSet Name="AnimalLot" Association="Model1.AnimalLot">
+      <End Role="Animal" EntitySet="AnimalSet" />
+      <End Role="Lot" EntitySet="LotSet" />
+    </AssociationSet>
+    <AssociationSet Name="CountryContinent" Association="Model1.CountryContinent">
+      <End Role="Country" EntitySet="CountrySet" />
+      <End Role="Continent" EntitySet="ContinentSet" />
+    </AssociationSet>
+    <AssociationSet Name="DepartmentCountry" Association="Model1.DepartmentCountry">
+      <End Role="Department" EntitySet="DepartmentSet" />
+      <End Role="Country" EntitySet="CountrySet" />
+    </AssociationSet>
+    <AssociationSet Name="DepartmentCity" Association="Model1.DepartmentCity">
+      <End Role="Department" EntitySet="DepartmentSet" />
+      <End Role="City" EntitySet="CitySet" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="rol">
     <Key>
@@ -83,6 +176,7 @@
     <Property Name="nombre_de_usuario" Type="String" Nullable="false" />
     <Property Name="contraseña" Type="String" Nullable="false" />
     <NavigationProperty Name="persona_id" Relationship="Model1.usuariopersona" FromRole="usuario" ToRole="persona" />
+    <Property Name="FarmId" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="persona">
     <Key>
@@ -100,6 +194,9 @@
     <Property Name="tipo_de_documento" Type="String" Nullable="false" />
     <Property Name="documento" Type="String" Nullable="false" />
     <Property Name="municipio_id" Type="String" Nullable="false" />
+    <NavigationProperty Name="City_id" Relationship="Model1.personaCity" FromRole="persona" ToRole="City" />
+    <NavigationProperty Name="vacunation" Relationship="Model1.vacunationpersona" FromRole="persona" ToRole="vacunation" />
+    <Property Name="vacunationId" Type="Int32" Nullable="false" />
   </EntityType>
   <Association Name="usuariopersona">
     <End Type="Model1.usuario" Role="usuario" Multiplicity="1" />
@@ -124,5 +221,427 @@
   <Association Name="vistamodulo">
     <End Type="Model1.vista" Role="vista" Multiplicity="*" />
     <End Type="Model1.modulo" Role="modulo" Multiplicity="1" />
+  </Association>
+  <EntityType Name="Farm">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="dimension" Type="String" Nullable="false" />
+    <Property Name="location" Type="String" Nullable="false" />
+    <Property Name="country" Type="String" Nullable="false" />
+    <Property Name="municipality" Type="String" Nullable="false" />
+    <Property Name="village" Type="String" Nullable="false" />
+    <NavigationProperty Name="usuario_id" Relationship="Model1.Farmusuario" FromRole="Farm" ToRole="usuario" />
+    <Property Name="LotId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="Farmusuario">
+    <End Type="Model1.Farm" Role="Farm" Multiplicity="1" />
+    <End Type="Model1.usuario" Role="usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Farm">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="usuario">
+        <PropertyRef Name="FarmId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Inventory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="admission_date" Type="String" Nullable="false" />
+    <Property Name="stock" Type="String" Nullable="false" />
+    <NavigationProperty Name="Supplies_id" Relationship="Model1.InventorySupplies" FromRole="Inventory" ToRole="Supplies" />
+    <Property Name="expiration_date" Type="String" Nullable="false" />
+    <NavigationProperty Name="inventory_history" Relationship="Model1.inventory_historyInventory" FromRole="Inventory" ToRole="inventory_history" />
+    <Property Name="inventory_historyId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vacunation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="date" Type="String" Nullable="false" />
+    <Property Name="text" Type="String" Nullable="false" />
+    <NavigationProperty Name="persona_id" Relationship="Model1.vacunationpersona" FromRole="vacunation" ToRole="persona" />
+    <NavigationProperty Name="Animal_id" Relationship="Model1.vacunationAnimal" FromRole="vacunation" ToRole="Animal" />
+  </EntityType>
+  <EntityType Name="Animal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="gender" Type="String" Nullable="false" />
+    <Property Name="weight" Type="String" Nullable="false" />
+    <Property Name="photo" Type="String" Nullable="false" />
+    <Property Name="race" Type="String" Nullable="false" />
+    <Property Name="porpuse" Type="String" Nullable="false" />
+    <Property Name="state" Type="String" Nullable="false" />
+    <Property Name="birthDay" Type="String" Nullable="false" />
+    <Property Name="dateRegister" Type="String" Nullable="false" />
+    <Property Name="AlertId" Type="Int32" Nullable="false" />
+    <Property Name="ProductionId" Type="Int32" Nullable="false" />
+    <Property Name="InseminationId" Type="Int32" Nullable="false" />
+    <Property Name="InseminationId1" Type="Int32" Nullable="false" />
+    <Property Name="InseminationId2" Type="Int32" Nullable="false" />
+    <Property Name="health_historyId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="vacunation" Relationship="Model1.vacunationAnimal" FromRole="Animal" ToRole="vacunation" />
+    <Property Name="vacunationId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Lot_id" Relationship="Model1.AnimalLot" FromRole="Animal" ToRole="Lot" />
+  </EntityType>
+  <EntityType Name="Alert">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="descripcion" Type="String" Nullable="false" />
+    <Property Name="date" Type="String" Nullable="false" />
+    <Property Name="state" Type="String" Nullable="false" />
+    <NavigationProperty Name="Animal_id" Relationship="Model1.AlertAnimal" FromRole="Alert" ToRole="Animal" />
+  </EntityType>
+  <Association Name="AlertAnimal">
+    <End Type="Model1.Alert" Role="Alert" Multiplicity="1" />
+    <End Type="Model1.Animal" Role="Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alert">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="AlertId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Production">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="String" Nullable="false" />
+    <Property Name="type_production" Type="String" Nullable="false" />
+    <Property Name="quantity" Type="String" Nullable="false" />
+    <Property Name="measurement" Type="String" Nullable="false" />
+    <Property Name="observation" Type="String" Nullable="false" />
+    <NavigationProperty Name="Animal_id" Relationship="Model1.ProductionAnimal" FromRole="Production" ToRole="Animal" />
+    <Property Name="SaleId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="ProductionAnimal">
+    <End Type="Model1.Production" Role="Production" Multiplicity="1" />
+    <End Type="Model1.Animal" Role="Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Production">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="ProductionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Sale">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="String" Nullable="false" />
+    <Property Name="price" Type="String" Nullable="false" />
+    <Property Name="quantity" Type="String" Nullable="false" />
+    <NavigationProperty Name="Production_id" Relationship="Model1.SaleProduction" FromRole="Sale" ToRole="Production" />
+  </EntityType>
+  <Association Name="SaleProduction">
+    <End Type="Model1.Sale" Role="Sale" Multiplicity="1" />
+    <End Type="Model1.Production" Role="Production" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sale">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Production">
+        <PropertyRef Name="SaleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Insemination">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="date" Type="String" Nullable="false" />
+    <NavigationProperty Name="father_id" Relationship="Model1.InseminationAnimal" FromRole="Insemination" ToRole="Animal" />
+    <NavigationProperty Name="mother_id" Relationship="Model1.InseminationAnimal1" FromRole="Insemination" ToRole="Animal" />
+    <NavigationProperty Name="animal_id" Relationship="Model1.InseminationAnimal2" FromRole="Insemination" ToRole="Animal" />
+    <Property Name="observation" Type="String" Nullable="false" />
+    <Property Name="state" Type="String" Nullable="false" />
+  </EntityType>
+  <Association Name="InseminationAnimal">
+    <End Type="Model1.Insemination" Role="Insemination" Multiplicity="1" />
+    <End Type="Model1.Animal" Role="Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Insemination">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="InseminationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="InseminationAnimal1">
+    <End Type="Model1.Insemination" Role="Insemination" Multiplicity="1" />
+    <End Type="Model1.Animal" Role="Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Insemination">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="InseminationId1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="InseminationAnimal2">
+    <End Type="Model1.Insemination" Role="Insemination" Multiplicity="1" />
+    <End Type="Model1.Animal" Role="Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Insemination">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="InseminationId2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="health_history">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="diagnosis" Type="String" Nullable="false" />
+    <Property Name="medicines" Type="String" Nullable="false" />
+    <Property Name="treatment_days" Type="String" Nullable="false" />
+    <Property Name="description" Type="String" Nullable="false" />
+    <Property Name="date" Type="String" Nullable="false" />
+    <NavigationProperty Name="Animal_id" Relationship="Model1.health_historyAnimal" FromRole="health_history" ToRole="Animal" />
+    <Property Name="state" Type="String" Nullable="false" />
+    <NavigationProperty Name="Treatment" Relationship="Model1.Treatmenthealth_history" FromRole="health_history" ToRole="Treatment" />
+    <Property Name="TreatmentId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="health_historyAnimal">
+    <End Type="Model1.health_history" Role="health_history" Multiplicity="1" />
+    <End Type="Model1.Animal" Role="Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="health_history">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="health_historyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Treatment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="medicines" Type="String" Nullable="false" />
+    <Property Name="date" Type="String" Nullable="false" />
+    <Property Name="description" Type="String" Nullable="false" />
+    <NavigationProperty Name="health_history_id" Relationship="Model1.Treatmenthealth_history" FromRole="Treatment" ToRole="health_history" />
+  </EntityType>
+  <EntityType Name="Lot">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="production_system" Type="String" Nullable="false" />
+    <NavigationProperty Name="Farm_id" Relationship="Model1.LotFarm" FromRole="Lot" ToRole="Farm" />
+    <NavigationProperty Name="Animal" Relationship="Model1.AnimalLot" FromRole="Lot" ToRole="Animal" />
+    <Property Name="AnimalId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" Nullable="false" />
+    <Property Name="description" Type="String" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Country_id" Relationship="Model1.DepartmentCountry" FromRole="Department" ToRole="Country" />
+    <NavigationProperty Name="City_id" Relationship="Model1.DepartmentCity" FromRole="Department" ToRole="City" />
+  </EntityType>
+  <EntityType Name="Continent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" Nullable="false" />
+    <Property Name="description" Type="String" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" Nullable="false" />
+    <Property Name="description" Type="String" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Continent_id" Relationship="Model1.CountryContinent" FromRole="Country" ToRole="Continent" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="code" Type="String" Nullable="false" />
+    <Property Name="description" Type="String" Nullable="false" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="personaId" Type="Int32" Nullable="false" />
+    <Property Name="municipality_id" Type="String" Nullable="false" />
+    <NavigationProperty Name="Department" Relationship="Model1.DepartmentCity" FromRole="City" ToRole="Department" />
+    <Property Name="DepartmentId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="personaCity">
+    <End Type="Model1.persona" Role="persona" Multiplicity="1" />
+    <End Type="Model1.City" Role="City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="persona">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="personaId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="LotFarm">
+    <End Type="Model1.Lot" Role="Lot" Multiplicity="1" />
+    <End Type="Model1.Farm" Role="Farm" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Lot">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Farm">
+        <PropertyRef Name="LotId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Supplies">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" Nullable="false" />
+    <Property Name="description" Type="String" Nullable="false" />
+    <Property Name="amount" Type="String" Nullable="false" />
+    <Property Name="input_type" Type="String" Nullable="false" />
+    <Property Name="date" Type="String" Nullable="false" />
+    <NavigationProperty Name="Inventory" Relationship="Model1.InventorySupplies" FromRole="Supplies" ToRole="Inventory" />
+    <Property Name="InventoryId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="InventorySupplies">
+    <End Type="Model1.Inventory" Role="Inventory" Multiplicity="1" />
+    <End Type="Model1.Supplies" Role="Supplies" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Supplies">
+        <PropertyRef Name="InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="inventory_history">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Inventory_id" Relationship="Model1.inventory_historyInventory" FromRole="inventory_history" ToRole="Inventory" />
+    <Property Name="date" Type="String" Nullable="false" />
+    <Property Name="amount" Type="String" Nullable="false" />
+  </EntityType>
+  <Association Name="inventory_historyInventory">
+    <End Type="Model1.inventory_history" Role="inventory_history" Multiplicity="1" />
+    <End Type="Model1.Inventory" Role="Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory_history">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="inventory_historyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vacunationpersona">
+    <End Type="Model1.vacunation" Role="vacunation" Multiplicity="1" />
+    <End Type="Model1.persona" Role="persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vacunation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="persona">
+        <PropertyRef Name="vacunationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vacunationAnimal">
+    <End Type="Model1.vacunation" Role="vacunation" Multiplicity="1" />
+    <End Type="Model1.Animal" Role="Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vacunation">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="vacunationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Treatmenthealth_history">
+    <End Type="Model1.Treatment" Role="Treatment" Multiplicity="1" />
+    <End Type="Model1.health_history" Role="health_history" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Treatment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="health_history">
+        <PropertyRef Name="TreatmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="AnimalLot">
+    <End Type="Model1.Animal" Role="Animal" Multiplicity="1" />
+    <End Type="Model1.Lot" Role="Lot" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Lot">
+        <PropertyRef Name="AnimalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CountryContinent">
+    <End Type="Model1.Country" Role="Country" Multiplicity="*" />
+    <End Type="Model1.Continent" Role="Continent" Multiplicity="1" />
+  </Association>
+  <Association Name="DepartmentCountry">
+    <End Type="Model1.Department" Role="Department" Multiplicity="*" />
+    <End Type="Model1.Country" Role="Country" Multiplicity="1" />
+  </Association>
+  <Association Name="DepartmentCity">
+    <End Type="Model1.Department" Role="Department" Multiplicity="1" />
+    <End Type="Model1.City" Role="City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="DepartmentId" />
+      </Dependent>
+    </ReferentialConstraint>
   </Association>
 </Schema>

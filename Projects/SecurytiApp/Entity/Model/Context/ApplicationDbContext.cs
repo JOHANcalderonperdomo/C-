@@ -1,5 +1,6 @@
 ﻿using Dapper;
-using Entity.Model.Security;
+using Entity.Model.Entity.Location;
+using Entity.Model.Entity.Security;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.EntityFrameworkCore.Storage;
@@ -17,14 +18,66 @@ namespace Entity.Model.Context
 {
     public class ApplicationDbContext : DbContext
     {
+        public DbSet<Rol> Roles { get; set; }
+        public DbSet<Vista> Vistas { get; set; }
+        public DbSet<Rol_Vista> RolVistas { get; set; }
+
         protected readonly IConfiguration _configuration;
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IConfiguration configuration)
-            : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, IConfiguration configuration): base(options)
         {
             _configuration = configuration;
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // llaves foraneas de Security 
+
+            modelBuilder.Entity<Usuario>()
+            .HasOne(u => u.persona)
+            .WithMany(p => p.Usuarios)
+            .HasForeignKey(u => u.personaId);
+
+            modelBuilder.Entity<Vista>()
+            .HasOne(u => u.modulo)
+            .WithMany(p => p.vistas)
+            .HasForeignKey(u => u.moduloId);
+
+            modelBuilder.Entity<Rol_Vista>()
+                .HasOne(rv => rv.rol)
+                .WithMany(r => r.rol_Vistas_rol)
+                .HasForeignKey(rv => rv.rolId);
+
+            modelBuilder.Entity<Rol_Vista>()
+                .HasOne(rv => rv.vista)
+                .WithMany(v => v.rol_vista_vista)
+                .HasForeignKey(rv => rv.vistaId);
+
+            modelBuilder.Entity<Usuario_rol>()
+                .HasOne(rv => rv.usuario)
+                .WithMany(v => v.usuario_rol_usuario)
+                .HasForeignKey(rv => rv.usuario_id);
+
+            modelBuilder.Entity<Usuario_rol>()
+                .HasOne(rv => rv.rol)
+                .WithMany(v => v.rol_usuario_rol)
+                .HasForeignKey(rv => rv.rol_id);
+
+            // llaves foraneas de Location 
+            modelBuilder.Entity<Country>()
+                .HasOne(c => c.continet)
+                .WithMany(co => co.country)
+                .HasForeignKey(c => c.Continet_id);
+
+            modelBuilder.Entity<Department>()
+                .HasOne(d => d.country)
+                .WithMany(co => co.departments)
+                .HasForeignKey(d => d.countryId);
+
+            modelBuilder.Entity<City>()
+                .HasOne(c => c.department)
+                .WithMany(co => co.city)
+                .HasForeignKey(c => c.departmentId);
+
+
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             //DataInicial.Data(modelBuilder);
@@ -81,10 +134,15 @@ namespace Entity.Model.Context
         public DbSet<Persona> personas => Set<Persona>();
         public DbSet<Vista> vistas => Set<Vista>(); 
         public DbSet<Usuario_rol> usuario_rol => Set<Usuario_rol>();
-        public DbSet<Security.Modulo> modulo => Set<Security.Modulo>();
+        public DbSet<Modulo> modulo => Set<Modulo>();
 
         public DbSet<Usuario> usuario => Set<Usuario>();
         public DbSet<Rol_Vista> rol_vista => Set<Rol_Vista>();
+
+        public DbSet<Continet> continet => Set<Continet>();
+        public DbSet<Country> country => Set<Country>();
+        public DbSet<Department> department => Set<Department>();
+        public DbSet<City> city => Set<City>();
     }
     public readonly struct DapperEFCoreCommand : IDisposable
     {

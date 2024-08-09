@@ -75,3 +75,8 @@ C:\Users\ASUS\OneDrive\Documentos\Visual Studio 2022\Projects\SecurytiApp\Web\ob
 C:\Users\ASUS\OneDrive\Documentos\Visual Studio 2022\Projects\SecurytiApp\Web\obj\Debug\net7.0\Web.pdb
 C:\Users\ASUS\OneDrive\Documentos\Visual Studio 2022\Projects\SecurytiApp\Web\obj\Debug\net7.0\Web.genruntimeconfig.cache
 C:\Users\ASUS\OneDrive\Documentos\Visual Studio 2022\Projects\SecurytiApp\Web\obj\Debug\net7.0\ref\Web.dll
+C:\Users\ASUS\OneDrive\Documentos\Visual Studio 2022\Projects\SecurytiApp\Web\bin\Debug\net7.0\Humanizer.dll
+C:\Users\ASUS\OneDrive\Documentos\Visual Studio 2022\Projects\SecurytiApp\Web\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ASUS\OneDrive\Documentos\Visual Studio 2022\Projects\SecurytiApp\Web\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ASUS\OneDrive\Documentos\Visual Studio 2022\Projects\SecurytiApp\Web\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\ASUS\OneDrive\Documentos\Visual Studio 2022\Projects\SecurytiApp\Web\bin\Debug\net7.0\System.CodeDom.dll
