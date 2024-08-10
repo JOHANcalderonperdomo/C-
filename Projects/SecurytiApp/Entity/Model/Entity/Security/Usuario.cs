@@ -10,7 +10,7 @@ namespace Entity.Model.Entity.Security
     {
         public int Id { get; set; }
         public string nombre_de_usuario { get; set; }
-        public string contraseña { get; set; }
+        public string contrasena { get; set; }
         public int personaId { get; set; }
         public Persona persona { get; set; }
 

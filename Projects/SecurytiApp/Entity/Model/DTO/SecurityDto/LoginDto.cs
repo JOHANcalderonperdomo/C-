@@ -9,6 +9,6 @@ namespace Entity.Model.DTO.SecurityDto
     public class LoginDto
     {
         public string nombre { get; set; }
-        public string contraseña { get; set; }
+        public string contrasena { get; set; }
     }
 }

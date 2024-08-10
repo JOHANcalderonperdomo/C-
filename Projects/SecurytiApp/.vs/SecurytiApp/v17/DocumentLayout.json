@@ -1,12 +1,258 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C888AA2C-63A0-4A21-85D4-FB48EF6BD69C}|Entity\\Entity.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\entity\\model\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C888AA2C-63A0-4A21-85D4-FB48EF6BD69C}|Entity\\Entity.csproj|solutionrelative:entity\\model\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E9C27F9-C087-44BF-923C-4F355D21882A}|Business\\Business.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\business\\security\\interface\\usuariorolbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E9C27F9-C087-44BF-923C-4F355D21882A}|Business\\Business.csproj|solutionrelative:business\\security\\interface\\usuariorolbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E9C27F9-C087-44BF-923C-4F355D21882A}|Business\\Business.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\business\\security\\interface\\usuariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E9C27F9-C087-44BF-923C-4F355D21882A}|Business\\Business.csproj|solutionrelative:business\\security\\interface\\usuariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C888AA2C-63A0-4A21-85D4-FB48EF6BD69C}|Entity\\Entity.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\entity\\model\\dto\\securitydto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C888AA2C-63A0-4A21-85D4-FB48EF6BD69C}|Entity\\Entity.csproj|solutionrelative:entity\\model\\dto\\securitydto\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E9C27F9-C087-44BF-923C-4F355D21882A}|Business\\Business.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\business\\security\\interface\\modulobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E9C27F9-C087-44BF-923C-4F355D21882A}|Business\\Business.csproj|solutionrelative:business\\security\\interface\\modulobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C888AA2C-63A0-4A21-85D4-FB48EF6BD69C}|Entity\\Entity.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\entity\\model\\dto\\securitydto\\modulodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C888AA2C-63A0-4A21-85D4-FB48EF6BD69C}|Entity\\Entity.csproj|solutionrelative:entity\\model\\dto\\securitydto\\modulodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E9C27F9-C087-44BF-923C-4F355D21882A}|Business\\Business.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\business\\security\\interface\\rolvistabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E9C27F9-C087-44BF-923C-4F355D21882A}|Business\\Business.csproj|solutionrelative:business\\security\\interface\\rolvistabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6E9C27F9-C087-44BF-923C-4F355D21882A}|Business\\Business.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\business\\security\\interface\\vistabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E9C27F9-C087-44BF-923C-4F355D21882A}|Business\\Business.csproj|solutionrelative:business\\security\\interface\\vistabusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA7DDB7-102D-4A8C-B675-5E65E953115D}|Data\\Data.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\data\\security\\interface\\vistadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA7DDB7-102D-4A8C-B675-5E65E953115D}|Data\\Data.csproj|solutionrelative:data\\security\\interface\\vistadata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA7DDB7-102D-4A8C-B675-5E65E953115D}|Data\\Data.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\data\\security\\interface\\usuariodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA7DDB7-102D-4A8C-B675-5E65E953115D}|Data\\Data.csproj|solutionrelative:data\\security\\interface\\usuariodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{669590DA-47E8-4F1E-8B17-B4587FC2C082}|Web\\Web.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\web\\controllers\\security\\interface\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{669590DA-47E8-4F1E-8B17-B4587FC2C082}|Web\\Web.csproj|solutionrelative:web\\controllers\\security\\interface\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C888AA2C-63A0-4A21-85D4-FB48EF6BD69C}|Entity\\Entity.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\entity\\model\\dto\\securitydto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C888AA2C-63A0-4A21-85D4-FB48EF6BD69C}|Entity\\Entity.csproj|solutionrelative:entity\\model\\dto\\securitydto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{669590DA-47E8-4F1E-8B17-B4587FC2C082}|Web\\Web.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\web\\controllers\\security\\interface\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{669590DA-47E8-4F1E-8B17-B4587FC2C082}|Web\\Web.csproj|solutionrelative:web\\controllers\\security\\interface\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C888AA2C-63A0-4A21-85D4-FB48EF6BD69C}|Entity\\Entity.csproj|c:\\users\\asus\\onedrive\\documentos\\visual studio 2022\\projects\\securytiapp\\entity\\model\\entity\\security\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C888AA2C-63A0-4A21-85D4-FB48EF6BD69C}|Entity\\Entity.csproj|solutionrelative:entity\\model\\entity\\security\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Entity\\Model\\Context\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\Context\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Entity\\Model\\Context\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Entity\\Model\\Context\\ApplicationDbContext.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:53:06.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuarioRolBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Business\\Security\\Interface\\UsuarioRolBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Security\\Interface\\UsuarioRolBusiness.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Business\\Security\\Interface\\UsuarioRolBusiness.cs",
+              "RelativeToolTip": "Business\\Security\\Interface\\UsuarioRolBusiness.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAADwv0sAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:35:42.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModuloDto.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Entity\\Model\\DTO\\SecurityDto\\ModuloDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\DTO\\SecurityDto\\ModuloDto.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Entity\\Model\\DTO\\SecurityDto\\ModuloDto.cs",
+              "RelativeToolTip": "Entity\\Model\\DTO\\SecurityDto\\ModuloDto.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:24:35.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ModuloBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Business\\Security\\Interface\\ModuloBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Security\\Interface\\ModuloBusiness.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Business\\Security\\Interface\\ModuloBusiness.cs",
+              "RelativeToolTip": "Business\\Security\\Interface\\ModuloBusiness.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAwwEwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:24:17.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RolVistaBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Business\\Security\\Interface\\RolVistaBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Security\\Interface\\RolVistaBusiness.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Business\\Security\\Interface\\RolVistaBusiness.cs",
+              "RelativeToolTip": "Business\\Security\\Interface\\RolVistaBusiness.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAA/wEoAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:22:05.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VistaBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Business\\Security\\Interface\\VistaBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Security\\Interface\\VistaBusiness.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Business\\Security\\Interface\\VistaBusiness.cs",
+              "RelativeToolTip": "Business\\Security\\Interface\\VistaBusiness.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAkwDUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:19:30.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VistaData.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Data\\Security\\Interface\\VistaData.cs",
+              "RelativeDocumentMoniker": "Data\\Security\\Interface\\VistaData.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Data\\Security\\Interface\\VistaData.cs",
+              "RelativeToolTip": "Data\\Security\\Interface\\VistaData.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAIwFMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T22:15:07.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Web\\Controllers\\Security\\Interface\\PersonaController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\Security\\Interface\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Web\\Controllers\\Security\\Interface\\PersonaController.cs",
+              "RelativeToolTip": "Web\\Controllers\\Security\\Interface\\PersonaController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T20:57:38.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Business\\Security\\Interface\\UsuarioBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Security\\Interface\\UsuarioBusiness.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Business\\Security\\Interface\\UsuarioBusiness.cs",
+              "RelativeToolTip": "Business\\Security\\Interface\\UsuarioBusiness.cs",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAIwGwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T19:45:01.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Entity\\Model\\Entity\\Security\\Usuario.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\Entity\\Security\\Usuario.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Entity\\Model\\Entity\\Security\\Usuario.cs",
+              "RelativeToolTip": "Entity\\Model\\Entity\\Security\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T19:44:03.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuarioDto.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Entity\\Model\\DTO\\SecurityDto\\UsuarioDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\DTO\\SecurityDto\\UsuarioDto.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Entity\\Model\\DTO\\SecurityDto\\UsuarioDto.cs",
+              "RelativeToolTip": "Entity\\Model\\DTO\\SecurityDto\\UsuarioDto.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T19:43:18.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuarioData.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Data\\Security\\Interface\\UsuarioData.cs",
+              "RelativeDocumentMoniker": "Data\\Security\\Interface\\UsuarioData.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Data\\Security\\Interface\\UsuarioData.cs",
+              "RelativeToolTip": "Data\\Security\\Interface\\UsuarioData.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAiwF0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T19:42:52.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Entity\\Model\\DTO\\SecurityDto\\LoginDto.cs",
+              "RelativeDocumentMoniker": "Entity\\Model\\DTO\\SecurityDto\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Entity\\Model\\DTO\\SecurityDto\\LoginDto.cs",
+              "RelativeToolTip": "Entity\\Model\\DTO\\SecurityDto\\LoginDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T19:42:14.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Web\\Controllers\\Security\\Interface\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\Security\\Interface\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\OneDrive\\Documentos\\Visual Studio 2022\\Projects\\SecurytiApp\\Web\\Controllers\\Security\\Interface\\UsuarioController.cs",
+              "RelativeToolTip": "Web\\Controllers\\Security\\Interface\\UsuarioController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAADwv0YAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-10T19:08:06.989Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -37,6 +37,7 @@ namespace Business.Security.Interface
             rolvistaDto.Id = rol_vista.Id;
             rolvistaDto.rolId = rol_vista.rolId;
             rolvistaDto.rolId = rol_vista.vistaId;
+            rolvistaDto.state = rol_vista.state;
 
             return rolvistaDto;
         }
@@ -71,6 +72,7 @@ namespace Business.Security.Interface
             rol_vista.Id = entity.Id;
             rol_vista.rolId = entity.rolId;
             rol_vista.vistaId = entity.rolId;
+            rol_vista.state = entity.state;
 
             return rol_vista;
         }

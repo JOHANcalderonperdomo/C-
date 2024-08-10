@@ -37,6 +37,7 @@ namespace Business.Security.Interface
             UsuarioRolDto.Id = usuario_rol.Id;
             UsuarioRolDto.UsuarioId = usuario_rol.usuario_id;
             UsuarioRolDto.RolId = usuario_rol.rol_id;
+            UsuarioRolDto.state = usuario_rol.state;
 
 
             return UsuarioRolDto;
@@ -72,6 +73,7 @@ namespace Business.Security.Interface
             usuario_Rol.Id = entity.Id;
             usuario_Rol.usuario_id = entity.UsuarioId;
             usuario_Rol.rol_id = entity.RolId;
+            usuario_Rol.state = entity.state;
 
             return usuario_Rol;
         }

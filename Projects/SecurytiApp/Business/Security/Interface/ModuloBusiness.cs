@@ -36,6 +36,7 @@ namespace Business.Security.Interface
             moduloDto.Id = modulo.Id;
             moduloDto.nombre = modulo.nombre;
             moduloDto.descripcion = modulo.descripcion;
+            moduloDto.estado = modulo.state;
 
 
 
@@ -73,6 +74,7 @@ namespace Business.Security.Interface
             modulo.Id = entity.Id;
             modulo.nombre = entity.nombre;
             modulo.descripcion = entity.nombre;
+            modulo.state = entity.estado;
 
             return modulo;
         }

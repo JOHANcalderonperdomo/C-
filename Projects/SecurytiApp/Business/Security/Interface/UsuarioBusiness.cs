@@ -37,8 +37,9 @@ namespace Business.Security.Interface
 
             usuarioDto.Id = usuario.Id;
             usuarioDto.nombre_de_usuario = usuario.nombre_de_usuario;
-            usuarioDto.contraseña = usuario.contraseña;
+            usuarioDto.contrasena = usuario.contrasena;
             usuarioDto.personaId = usuario.personaId;
+            usuarioDto.estado = usuario.estado;
 
 
 
@@ -74,8 +75,9 @@ namespace Business.Security.Interface
         {
             usuario.Id = entity.Id;
             usuario.nombre_de_usuario = entity.nombre_de_usuario;
-            usuario.contraseña = entity.contraseña;
+            usuario.contrasena = entity.contrasena;
             usuario.personaId = entity.personaId;
+            usuario.estado = entity.estado;
 
 
             return usuario;
@@ -102,8 +104,9 @@ namespace Business.Security.Interface
                 {
                     Id = user.Id,
                     nombre_de_usuario = user.nombre_de_usuario,
-                    contraseña = user.contraseña,
+                    contrasena = user.contrasena,
                     personaId = user.personaId
+                    
                 },
                 Roles = roles.ToList(),
                 Views = rolvista.Distinct().ToList()

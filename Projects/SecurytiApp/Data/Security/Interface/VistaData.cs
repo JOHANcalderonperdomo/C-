@@ -80,7 +80,7 @@ namespace Data.Security.Interface
                             deleted_at,
                             estado 
                         FROM 
-                            vistas
+                            Vista
                         WHERE deleted_at IS NULL AND estado = 1
                         ORDER BY Id ASC";
             return await context.QueryAsync<VistaDto>(sql);

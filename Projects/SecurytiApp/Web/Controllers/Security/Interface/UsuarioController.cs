@@ -67,8 +67,8 @@ namespace Web.Controllers.Security.Interface
             return NoContent();
         }
 
-        [HttpPost("login")]
-        public async Task<IActionResult> Login(LoginDto loginDto)
+        [HttpPost("Login")]
+        public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
             var userDto = await _UsuarioBusiness.LoginAsync(loginDto);
             if (userDto == null)

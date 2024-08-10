@@ -11,8 +11,9 @@ namespace Entity.Model.DTO.SecurityDto
     {
         public int Id { get; set; }
         public string nombre_de_usuario { get; set; }
-        public string contraseña { get; set; }
+        public string contrasena { get; set; }
         public int personaId { get; set; }
+        public Boolean estado {  get; set; }
 
 
     }

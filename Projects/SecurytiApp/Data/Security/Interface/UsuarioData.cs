@@ -87,7 +87,7 @@ namespace Data.Security.Interface
 
         public async Task<UsuarioDto> GetByLogin(LoginDto loginDto)
         {
-            var usuario = await context.usuario.FirstOrDefaultAsync(u => u.nombre_de_usuario == loginDto.nombre && u.contraseña == loginDto.contraseña);
+            var usuario = await context.usuario.FirstOrDefaultAsync(u => u.nombre_de_usuario == loginDto.nombre && u.contrasena == loginDto.contrasena);
             if (usuario == null)
             {
                 return null;
@@ -97,7 +97,7 @@ namespace Data.Security.Interface
             {
                 Id = usuario.Id,
                 nombre_de_usuario = usuario.nombre_de_usuario,
-                contraseña = usuario.contraseña,
+                contrasena = usuario.contrasena,
                 personaId = usuario.personaId
 
             };

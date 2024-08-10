@@ -38,6 +38,7 @@ namespace Business.Security.Interface
             vistaDto.descripcion = vista.descripcion;
             vistaDto.ruta = vista.ruta;
             vistaDto.moduloId = vista.moduloId;
+            vistaDto.estado = vista.estado;
 
 
 
@@ -76,6 +77,7 @@ namespace Business.Security.Interface
             vista.descripcion = entity.descripcion;
             vista.ruta = entity.ruta;
             vista.moduloId = entity.moduloId;
+            vista.estado = entity.estado;
 
             return vista;
         }
